@@ -24,8 +24,6 @@ for (let i = 0; i < lines.length; i++) {
 
 let nb_xmas = 0;
 
-console.log("------------------------------ start ------------------------------");
-
 for (let i = 1; i < grid.length - 1; i++) {
   for (let ii = 1; ii < grid[i].length - 1; ii++) {
     const letter = grid[i][ii];
@@ -45,8 +43,6 @@ for (let i = 1; i < grid.length - 1; i++) {
     strings.push(top_bottom, bottom_top);
 
     const xmass = strings.filter((string) => string == "MAS" || string == "SAM");
-
-    console.log(i, ii, strings);
 
     if (xmass.length == 2) nb_xmas++;
   }
