@@ -1,5 +1,3 @@
-const { parse } = require("canvas-sketch-util/color");
-
 const input_path = "./input.txt";
 const file = Bun.file(input_path);
 const text = await file.text();
